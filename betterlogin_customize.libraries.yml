@@ -1,0 +1,4 @@
+betterlogin_customize:
+  css:
+    component:
+      css/betterlogin_customize.css: {}

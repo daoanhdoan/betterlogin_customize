@@ -1,0 +1,32 @@
+<?php
+/**
+ *
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * @see hook_form_alter()
+ */
+
+function betterlogin_customize_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Autofocus on the username field.
+  // And add some pretty CSS :).
+  // And a few other things too...
+  if ($form_id == 'user_login_form' || $form_id == 'user_pass' || $form_id == 'user_pass_reset') {
+    foreach (['name', 'pass', 'mail'] as $name) {
+      if (!empty($form[$name])) {
+        $form[$name]['#title_display'] = 'hidden';
+        $form[$name]['#attributes']['placeholder'] = $form[$name]['#title'];
+      }
+    }
+  }
+}
+
+/**
+ * @see hook_page_attachments()
+ */
+function betterlogin_customize_page_attachments(array &$attachments) {
+  // Unconditionally attach an asset to the page.
+  $attachments['#attached']['library'][] = 'betterlogin_customize/betterlogin_customize';
+}

@@ -1,0 +1,28 @@
+#auth_box {
+  min-width: 380px;
+  font-size: 12px;
+}
+
+#auth_box .nav-tabs .nav-link {
+  padding: 10px;
+}
+
+#middle_part h2.title {
+  display: none;
+}
+
+#middle_part .page-title {
+  text-align: center;
+}
+
+@media (max-width: 380px){
+  #auth_box {
+    min-width: 100% !important;
+  }
+  #auth_box #middle_part {
+    margin: 10px;
+  }
+  #auth_box #bottom_part {
+    margin: 10px;
+  }
+}
