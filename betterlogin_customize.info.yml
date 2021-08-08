@@ -2,5 +2,5 @@ name: Better Login Customize
 type: module
 core_version_requirement: ^9
 dependencies:
- - drupal:betterlogin
- - drupal:anonymous_login
+ - betterlogin
+ - anonymous_login
