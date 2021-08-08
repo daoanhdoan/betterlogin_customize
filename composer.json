@@ -1,9 +1,13 @@
 {
-  "name": "daoanhdoan/betterlogin_customize",
-  "description": "Better Login Customize",
-  "type": "drupal-custom-module",
-  "license":"GPL-2.0",
-  "extra": {
-    "installer-name": "betterlogin_customize"
-  }
+    "name" : "daoanhdoan/betterlogin_customize",
+    "description": " - ",
+    "type" : "drupal-custom-module",
+    "license": "GPL-2.0",
+    "extra": {
+        "installer-name": "betterlogin_customize"
+    },
+    "require": {
+        "drupal/betterlogin": "*",
+        "drupal/anonymous_login": "*"
+    }
 }
