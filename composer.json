@@ -1,6 +1,6 @@
 {
     "name" : "daoanhdoan/betterlogin_customize",
-    "description": " - ",
+    "description": "Better Login Customize",
     "type" : "drupal-custom-module",
     "license": "GPL-2.0",
     "extra": {
