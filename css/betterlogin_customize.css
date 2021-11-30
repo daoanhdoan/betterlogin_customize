@@ -15,6 +15,14 @@
   text-align: center;
 }
 
+#auth_box input[type="text"], #auth_box input[type="password"] {
+  width: 100% !important;
+}
+
+#top_part #the_logo img {
+  display: inline-block;
+}
+
 @media (max-width: 380px){
   #auth_box {
     min-width: 100% !important;
